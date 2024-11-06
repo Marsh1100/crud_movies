@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Styles-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Movies</title>
+
+    <link rel="shortcut icon" href="img/favicon.png">
+
+</head>
+<body>
+    
+    <header>
+        <h1>Gestor de Películas</h1>
+    </header>
+
+    <nav>
+        <ul class="nav nav-underline">
+            <li class="nav-item">
+              <a class="nav-link" href="#module-movies" style="color:white">Películas</a>
+            </li>
+          </ul>
+    </nav>
+
+    <main>
+        <!-- MOVIES -->
+        <section id="module-movies">
+            <div class="container-button-add">
+                <button type="button" class="btn btn-outline-primary" id="btn-add">Agregar+</button>
+            </div>
+            <div class="carts-movies" id="cart-Allmovies">
+                <!--Add movies dinamics-->
+            </div>
+        </section>
+        
+        <section id="module-details-movie" class="hidden">
+            <h5 id="title-detail" class="text-center"> </h5>
+            <div class="oneMovie-details">
+                <div class="containerImg" id="container-img">
+                    <!--Add img dinamics -->
+                </div>
+                <div>
+                    <div class="container-exit-details">
+                        <button type="button" class="btn-close close-details" aria-label="Close"
+                            style="color: white;"></button>
+                    </div>
+                    <div class="containerDetails" id="container-details">
+                        <!--Add details dinamics-->                            
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        
+        <!--CREATE OR EDIT MOVIE -->
+        <section id="module-add-edit" class="hidden">
+            <div class="addEditMovie">
+                <form id="movieForm" class="form ">
+                    <div style="display: flex;     justify-content: space-between;">
+                        <h4 id="title-add-edit">Agregar nueva película</h4>
+                        <button id="btn-back-movies" type="button" class="btn-close" aria-label="Close"
+                            style="color: white;"></button>
+                    </div>
+                    <div class="form-group">
+                        <label>Título</label>
+                        <input type="text" class="form-control" id="title" placeholder="Nombre de la película" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label>Año</label>
+                        <input type="number" class="form-control" id="year" placeholder="ej:2000"required>
+                    </div>
+                    <div class="form-group">
+                        <label >URL (opcional)</label>
+                        <input type="url" class="form-control" id="url" placeholder="https://ejemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Género</label>
+                        <div class="select-genres" id="genres">
+                            <!--"Added dynamically-->
+                        </div>                        
+                    </div>
+                    <div class="form-group">
+                        <label for="country">País</label>
+                        <select class="form-control" id="country">
+                            <option value="">Seleccione un país</option>
+                            <!--"Added dynamically-->
+                        </select>
+                    </div>
+
+                    <div>
+                        <h5 class="mt-4">Agregar Personas</h5>
+                        <div id="peopleContainer" class="d-flex flex-wrap mt-3">
+                            <!--Se agrega dinamicamente-->
+                        </div>
+                        <button type="button" id="btn-add-person" class="btn btn-success mt-2">+</button>
+                    </div>
+                    <button id="btn-save-movie" type="submit" class="btn btn-success mt-3">Guardar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer> ©Margie Bocanegra</footer>
+    <!--JavaScript-->
+    <script type="module" src="main.js"></script>
+    <!--Libreria para generar ID unicos
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.7/uuid.min.js"></script>-->
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!--SweetAlert2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

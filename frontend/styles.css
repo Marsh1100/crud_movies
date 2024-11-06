@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    flex: 1;
+    padding: 20px;
+}
+
+nav{
+    background-color: rgb(53, 37, 83);
+    color: white;
+    display: flex;
+    padding-left: 10px;
+}
+h1,h2,h3{
+    text-align: center;
+}
+
+.oneMovie-details{
+    padding-inline: 20px;
+    display: grid; 
+    grid-template-columns: 25vw 60vw; 
+    gap: 20px;
+    align-items: center;
+}
+
+.containerImg{
+    display: flex;
+    justify-content: center;
+}
+
+.imgMovie{
+    height:60vh;
+    object-fit: contain;
+}
+
+.container-exit-details{
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.addEditMovie{
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    align-items: center;
+}
+.carts-movies{
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-img-top{
+    width: 200px;
+    height: 180px;
+    object-fit: contain;
+}
+
+
+
+
+.card{
+    margin:10px;
+    padding: 20px;
+}
+
+
+.select-genres{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+
+.hidden{
+    display: none;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    background-color: rgb(53, 37, 83);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
