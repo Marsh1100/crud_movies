@@ -1,4 +1,4 @@
-# Proyecto Administración de Veterinaria
+# Proyecto CRUD de películas
 Este proyecto es un CRUD (Crear, Leer, Actualizar, Eliminar) diseñado para gestionar información de películas. La API está desarrollada en PHP puro, proporcionando endpoints para la manipulación de datos en la base de datos. El frontend se implementa utilizando JavaScript y Bootstrap.
 Para el entorno de desarrollo local, el servidor se configura utilizando XAMPP.
 
