@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <p class="text-center" ><strong>País:</strong> ${movie.country}</p>
             <p class="text-center" ><strong>Géneros:</strong> ${movie.genres.join(', ')}</p>
             <h6 class="text-center" >Elenco:</h6>
-            <div class="d-flex flex-wrap">
+            <div class="d-flex flex-wrap cards-staff"">
                 ${movie.staff.map(staff => `
                     <div class="card p-1" style="width: 15rem;">
                         <div class="card-body">
