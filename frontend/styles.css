@@ -22,8 +22,8 @@ h1,h2,h3{
 
 .oneMovie-details{
     padding-inline: 20px;
-    display: grid; 
-    grid-template-columns: 30vw 40vw; 
+    display: flex; 
+    flex-wrap: wrap;
     gap: 20px;
     align-items: center;
 
@@ -98,4 +98,6 @@ footer{
     color: white;
     text-align: center;
     padding: 10px 0;
+
+    margin-bottom: -10px;
 }

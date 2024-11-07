@@ -2,9 +2,8 @@
 import { movieUrl, countryUrl, genreUrl } from "./routes.js";
 
 document.addEventListener('DOMContentLoaded', function() {
-    let movieId = null; // Variable global para almacenar el id
+    let movieId = null;
 
-    //Module movies
     const $sectionMovies = document.getElementById('module-movies');
     const $sectionDetailsMovies = document.getElementById('module-details-movie');
     const $sectionAddEditMovie = document.getElementById('module-add-edit');
@@ -375,8 +374,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 allMovies += `<div class="card" style="width: 18rem;  display: flex;align-items: center;">
                     <img src=" ${valid ? movie.url : img} " class="card-img-top" alt="...">
                     <div class="card-body justify-content-center">
-                        <h5 class="card-title  justify-content-center">${movie.title}</h5>
-                        <p class="card-text"> ${movie.year} </p>
+                        <h5 class="card-title  justify-content-center text-center">${movie.title}</h5>
+                        <p class="card-text text-center"> ${movie.year} </p>
                     </div>
                     <div class="buttons-movie">
                         <button type="button" class="btn btn-warning"  style="color: white;"><i id="E${movie.id}" class="bi bi-pencil-square"></i></i></button>
